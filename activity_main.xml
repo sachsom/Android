@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="146dp">
+
+
+        <!--LINEAR LAYOUT HORIZONTAL START-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+
+            >
+
+
+            <!--TEAM A ONLY LINEAR LAYOUT VERTICAL-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:id="@+id/team_A_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="TEAM A"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/team_A_Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="0"
+                    android:textSize="60sp" />
+
+                <Button
+                    android:id="@+id/Point_A_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="increment_three_A"
+                    android:paddingHorizontal="18dp"
+                    android:text="+3 POINTS" />
+
+                <Button
+                    android:id="@+id/Point_A_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="increment_two_A"
+                    android:paddingHorizontal="18dp"
+                    android:text="+2 POINTS" />
+
+
+                <Button
+                    android:id="@+id/Point_A_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="increment_throw_A"
+                    android:text="FREE THROW" />
+
+            </LinearLayout>
+            <!--END OF TEAM A LINEAR LAYOUT-->
+
+
+            <!--START OF TEAM B VERTICAL LAYOUT-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:id="@+id/team_B_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="TEAM B"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/team_B_Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="0"
+                    android:textSize="60sp" />
+
+                <Button
+                    android:id="@+id/Point_B_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="increment_three_B"
+                    android:paddingHorizontal="18dp"
+                    android:text="+3 POINTS" />
+
+                <Button
+                    android:id="@+id/Point_B_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="increment_two_B"
+                    android:paddingHorizontal="18dp"
+                    android:text="+2 POINTS" />
+
+
+                <Button
+                    android:id="@+id/Point_B_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="increment_throw_B"
+                    android:text="FREE THROW" />
+
+            </LinearLayout>
+            <!--END OF LINEAR LAYOUT TEAM B VERTICAL-->
+
+
+        </LinearLayout>
+
+
+        <!--END OF HORIZONTAL LINEAR LAYOUT-->
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="Reset"
+            android:text="RESET"
+
+            />
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
